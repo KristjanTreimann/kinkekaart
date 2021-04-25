@@ -39,7 +39,7 @@ public class CardController {
 
     @PutMapping(path = "{cardId}")
     public void updateCard(
-            @PathVariable("{cardId}") Long cardId,
+            @PathVariable("cardId") Long cardId,
             @RequestParam(required = false) String name,
             @RequestParam(required = false) String cardNumber,
             @RequestParam(required = false) Integer balance) {
